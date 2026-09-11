@@ -1,0 +1,113 @@
+.resumen-estadistico {
+    background-color: #17202a;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.titulo-seccion {
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 200px;
+    background-color: #000;
+    color: #fff;
+}
+
+.resumen-estadistico select {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 200px;
+    background-color: #000;
+    color: #fff;
+}
+
+.resumen-cajas {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.card-resumen {
+    background-color: #fff;
+    border-left: 5px solid #2c7be5;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    flex: 1;
+    border-radius: 10px;
+    min-width: 240px;
+}
+
+.card-resumen h5 {
+    color: #2c7be5;
+    margin-bottom: 0.5rem;
+}
+
+.card-resumen p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-producto {
+    background-color: #1d8348;
+    border-left: 5px solid #1d83;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    flex: 1;
+    border-radius: 10px;
+    min-width: 240px;
+    color: #fff;
+
+    h5 {
+        color: #fff;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.card-dia {
+    background-color: #2874a6;
+    border-left: 5px solid #21618c;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    flex: 1;
+    border-radius: 10px;
+    min-width: 240px;
+    color: #fff;
+
+    h5 {
+        color: #fff;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.filtros-estadistica {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.filtros-estadistica .form-control {
+    min-width: 160px;
+}
+
+canvas#graficoVentas {
+    background-color: #d5d8dc;
+    color: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,368 @@
+/* 404 Page Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+    overflow: hidden;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem 1rem 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+    height: calc(100vh - 60px); /* Adjust based on header height */
+}
+
+.error-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 1.5rem 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin: 0.5rem auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    max-height: 90%;
+}
+
+.error-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #e74c3c, #3498db);
+}
+
+.error-code {
+    font-size: 6rem;
+    font-weight: 800;
+    color: #e74c3c;
+    margin: 0;
+    line-height: 1;
+    opacity: 0.1;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    z-index: 0;
+}
+
+.error-message-container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.error-message-container h1 {
+    color: #2c3e50;
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    flex-shrink: 0;
+}
+
+.error-message-container p {
+    color: #666;
+    margin: 0.5rem auto 1rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    max-width: 90%;
+    flex-shrink: 0;
+}
+
+.btn-home {
+    display: inline-block;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+    position: relative;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    flex-shrink: 0;
+    width: fit-content;
+    margin: 0.5rem auto 0;
+}
+
+.btn-home:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+}
+
+.btn-home:active {
+    transform: translateY(1px);
+}
+
+/* Cart Animation */
+.cart-animation {
+    width: 140px;
+    height: 90px;
+    margin: 0 auto 1rem;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.cart {
+    width: 120px;
+    height: 60px;
+    background: #e74c3c;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    margin: 0 auto;
+    animation: bounce 2s infinite ease-in-out;
+    transform-origin: bottom center;
+}
+
+.cart:before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 20px;
+    background: #e74c3c;
+    bottom: -10px;
+    left: 20%;
+    border-radius: 0 0 5px 5px;
+}
+
+.wheels {
+    position: absolute;
+    bottom: -15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.wheel {
+    width: 20px;
+    height: 20px;
+    background: #2c3e50;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    border: 3px solid #f1c40f;
+}
+
+.package {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #3498db;
+    border-radius: 5px;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fall 2s infinite;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+
+.package:nth-child(2) {
+    width: 35px;
+    height: 20px;
+    background: #2ecc71;
+    animation-delay: 0.3s;
+    top: -50px;
+}
+
+.package:nth-child(3) {
+    width: 25px;
+    height: 25px;
+    background: #f1c40f;
+    animation-delay: 0.6s;
+    top: -60px;
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 100% { 
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes wheel-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fall {
+    0% { 
+        top: -60px;
+        opacity: 0;
+        transform: translateX(-50%) scale(0.8) rotate(360deg);
+    }
+    30% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1) rotate(0deg);
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        top: 40px;
+        opacity: 0;
+        transform: translateX(-50%) scale(0.8) rotate(360deg);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    main {
+        padding: 0.5rem;
+        height: calc(100vh - 60px);
+    }
+    
+    .error-container {
+        padding: 1rem 0.75rem;
+        max-width: 95%;
+        max-height: 95%;
+    }
+    
+    .cart-animation {
+        width: 120px;
+        height: 80px;
+        margin-bottom: 0.5rem;
+    }
+    
+    .error-message h1 {
+        font-size: 1.3rem;
+        margin: 0.3rem 0;
+    }
+    
+    .error-message p {
+        font-size: 0.95rem;
+        margin: 0.3rem auto 0.8rem;
+    }
+    
+    .btn-home {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.95rem;
+        margin-top: 0.5rem;
+    }
+    .error-container {
+        padding: 1.5rem 1rem;
+        margin: 1rem;
+    }
+    
+    .error-code {
+        font-size: 5rem;
+        top: 0.25rem;
+        right: 0.75rem;
+    }
+    
+    .error-message h1 {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+    
+    .error-message p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .btn-home {
+        padding: 0.7rem 2rem;
+        font-size: 0.95rem;
+    }
+    
+    .cart-animation {
+        width: 140px;
+        height: 90px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .cart {
+        width: 100px !important;
+        height: 50px !important;
+    }
+    
+    .wheel {
+        width: 16px !important;
+        height: 16px !important;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+    .error-container {
+        padding: 1.25rem 0.75rem;
+        margin: 0.5rem;
+    }
+    
+    .error-code {
+        font-size: 4rem;
+    }
+    
+    .error-message h1 {
+        font-size: 1.4rem;
+    }
+    
+    .error-message p {
+        font-size: 0.95rem;
+    }
+    
+    .btn-home {
+        padding: 0.6rem 1.75rem;
+        font-size: 0.9rem;
+    }
+    
+    .cart-animation {
+        width: 120px;
+        height: 80px;
+    }
+    
+    .package {
+        width: 24px !important;
+        height: 24px !important;
+    }
+    
+    .package:nth-child(2) {
+        width: 28px !important;
+        height: 16px !important;
+    }
+    
+    .package:nth-child(3) {
+        width: 20px !important;
+        height: 20px !important;
+    }
+}

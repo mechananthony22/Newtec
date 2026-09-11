@@ -1,0 +1,285 @@
+/* ===============================
+   🧭 Header del Panel de Administración
+================================= */
+.dashboard-header {
+    background-color: #1d3557;
+    color: #f1faee;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 4px solid #457b9d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header h1 {
+    font-size: 24px;
+    margin: 0 0 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.dashboard-header nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dashboard-header nav a {
+    color: #f1faee;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: #457b9d;
+}
+
+.dashboard-header nav a:hover {
+    background-color: #f1faee;
+    color: #1d3557;
+    border-color: #1d3557;
+}
+
+/* ===============================
+   🎯 Estilo general del Dashboard
+================================= */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.dashboard-main h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.btn-dash {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-dash:hover {
+    background-color: #0056b3;
+}
+
+/* ===============================
+   📊 Tablas de Datos
+================================= */
+.dashboard-main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.dashboard-main th,
+.dashboard-main td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.dashboard-main th {
+    background-color: #f0f0f0;
+}
+
+.dashboard-main img {
+    max-width: 50px;
+    border-radius: 4px;
+}
+
+/* ===============================
+   📝 Formularios
+================================= */
+.form-dash {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-dash label {
+    font-weight: bold;
+}
+
+.form-dash input,
+.form-dash textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-dash textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-dash .btn-dash.cancel {
+    background-color: #6c757d;
+    margin-left: 10px;
+}
+
+/* ===============================
+   ✅ Mensajes de Éxito
+================================= */
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ===============================
+   📥 Footer del Admin
+================================= */
+.dashboard-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+/* ===============================
+   Panel de Administración - PeruNet
+================================= */
+
+/* ===============================
+   Panel de Administración - PeruNet
+================================= */
+
+/* General */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header del panel */
+.dashboard-header {
+    background-color: #1d3557;
+    color: #f1faee;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 4px solid #457b9d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+
+.dashboard-header nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.dashboard-header nav a {
+    background-color: #457b9d;
+    color: #f1faee;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+.dashboard-header nav a:hover {
+    background-color: #f1faee;
+    color: #1d3557;
+    border: 1px solid #1d3557;
+}
+
+/* Contenido principal */
+.dashboard-main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.dashboard-main h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* Botones */
+.dashboard-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-dash {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.btn-dash:hover {
+    background-color: #0056b3;
+}
+
+/* Footer opcional */
+.dashboard-footer {
+    background-color: #1d3557;
+    color: #f1faee;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+/* Envoltura para layout completo */
+body, html {
+    height: 100%;
+}
+
+.dashboard-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* El contenido (main) crece para empujar el footer hacia abajo */
+.dashboard-main {
+    flex: 1;
+}

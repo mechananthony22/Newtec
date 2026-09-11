@@ -1,0 +1,193 @@
+/* ======= Reset básico ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ======= Contenedor ======= */
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* ======= Título ======= */
+.login-container h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #1d3557;
+}
+
+/* ======= Inputs ======= */
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.login-container input:focus {
+    border-color: #457b9d;
+}
+
+/* ======= Botón ======= */
+.login-container button {
+    width: 100%;
+    background-color: #457b9d;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #1d3557;
+}
+
+/* ======= Enlace registro ======= */
+.login-container p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-container a {
+    color: #457b9d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* ======= Mensajes ======= */
+.login-container .error {
+    color: #e63946;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.login-container .success {
+    color: #2a9d8f;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+body {
+    background-color: #f2f2f2;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #1d3557;
+    margin-bottom: 20px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-container input,
+.login-container button {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.login-container input {
+    border: 1px solid #ccc;
+}
+
+.login-container button {
+    background-color: #1d3557;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #457b9d;
+}
+
+.login-container .error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.tech-gradient {
+    background: linear-gradient(135deg, #d10000, #990000);
+}
+
+.input-focus:focus {
+    box-shadow: 0 0 0 3px rgba(209, 0, 0, 0.3);
+}
+
+.tech-pattern {
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-color: rgba(255, 0, 0, 0.05);
+}
+
+.shake {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-5px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(5px);
+    }
+}
